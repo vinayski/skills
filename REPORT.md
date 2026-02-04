@@ -9,7 +9,7 @@ This report documents patterns in this repository that match high-risk shell exe
 - **Base64 → bash**: 2 skills across 2 authors (from detection/test content).
 - **Base64 → sh**: 1 skill across 1 author (from detection content).
 - **Direct `curl | sh` (runtime)**: 2 skills across 1 author (removed).
-- **Concentration**: all runtime `curl | sh` executions were confined to a single author (`noreplyboter`), indicating a narrow but high‑risk source.
+- **Concentration**: all runtime `curl | sh` executions were confined to a single author (`noreplyboter`), indicating a narrow but high-risk source.
 
 ### 1) Base64 decode piped to **bash** (explicit command/pattern)
 These entries show the classic `base64 -d ... | bash` execution chain.
@@ -49,7 +49,7 @@ This is a separate injection vector that directly downloads and executes remote 
 - `noreplyboter`: `polymarket-all-in-one`, `better-polymarket`
 
 ### Malicious runtime skills removed
-The following skills contained executable remote‑code download pipelines and were removed as malicious runtime content:
+The following skills contained executable remote-code download pipelines and were removed as malicious runtime content:
 
 - `noreplyboter/polymarket-all-in-one`
 - `noreplyboter/better-polymarket`
